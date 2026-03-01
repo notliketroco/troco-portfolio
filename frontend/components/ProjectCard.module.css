@@ -1,0 +1,94 @@
+.card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+    border-color: rgba(221, 51, 34, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.imagePlaceholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a0f50 0%, #2d1a7a 100%);
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(221, 51, 34, 0.2) 0%, rgba(25, 14, 79, 0.8) 100%);
+}
+
+.placeholder span {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(221, 51, 34, 0.9) 0%,
+            rgba(25, 14, 79, 0.95) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewProject {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    /* Reduced from 1rem */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-white);
+    padding: 0.8rem 1.6rem;
+    border: 2px solid var(--color-white);
+    border-radius: 50px;
+}
+
+.info {
+    padding: 1.2rem;
+    /* Reduced from 1.5rem */
+}
+
+.category {
+    display: inline-block;
+    font-size: 0.7rem;
+    /* Reduced from 0.75rem */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    /* Reduced from 1.3rem */
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: 1.3;
+}

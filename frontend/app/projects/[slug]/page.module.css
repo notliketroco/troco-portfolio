@@ -1,0 +1,236 @@
+.main {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 2rem 0 3rem;
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.breadcrumb a {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-secondary);
+}
+
+.category {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--color-white);
+    max-width: 800px;
+}
+
+/* Image Section */
+.imageSection {
+    padding: 0 0 4rem;
+}
+
+.mainImage {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(221, 51, 34, 0.2) 0%, rgba(25, 14, 79, 0.8) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagePlaceholder span {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* Info Section */
+.infoSection {
+    padding: 4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.description h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-accent);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.detailItem h4 {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.detailItem p {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+}
+
+/* Gallery Section */
+.gallerySection {
+    padding: 4rem 0;
+}
+
+.gallerySection h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.galleryItem {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.galleryPlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a0f50 0%, #2d1a7a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryPlaceholder span {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Next Project */
+.nextProject {
+    padding: 4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.nextProject span {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.nextLink {
+    display: inline-block;
+    padding: 1rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.nextLink:hover {
+    color: var(--color-secondary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .infoGrid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-top: 80px;
+    }
+
+    .imagePlaceholder span {
+        font-size: 4rem;
+    }
+
+    .galleryGrid {
+        grid-template-columns: 1fr;
+    }
+}

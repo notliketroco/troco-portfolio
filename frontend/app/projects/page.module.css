@@ -1,0 +1,117 @@
+.main {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.hero h1 span {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #ff6655 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.filterSection {
+    padding: 2rem 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filterBtn {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.filterBtn:hover {
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.filterBtn.active {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+/* Projects Section */
+.projectsSection {
+    padding: 2rem 0 6rem;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-top: 80px;
+    }
+
+    .hero {
+        padding: 3rem 0 1rem;
+    }
+
+    .filters {
+        gap: 0.5rem;
+    }
+
+    .filterBtn {
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+}

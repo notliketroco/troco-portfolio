@@ -1,0 +1,564 @@
+.main {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.heroText {
+    max-width: 500px;
+}
+
+.greeting {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.heroText h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-accent);
+    text-align: justify;
+}
+
+.heroImage {
+    display: flex;
+    justify-content: center;
+}
+
+.imagePlaceholder {
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(221, 51, 34, 0.2) 0%, rgba(25, 14, 79, 0.8) 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.imagePlaceholder span {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+/* About Section */
+.aboutSection {
+    padding: 5rem 0 3rem;
+}
+
+.longBio {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.longBio p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+
+.longBio p:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills Section */
+.skillsSection {
+    padding: 3rem 0 6rem;
+}
+
+.skillsSection h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Software Section (Grid) */
+.softwareGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.softwareItem {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition-md);
+    cursor: pointer;
+}
+
+.softwareItem:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 85, 68, 0.3);
+    transform: translateY(-5px);
+}
+
+.iconWrapper {
+    font-size: 3.5rem;
+    color: var(--color-secondary);
+    /* Naranja */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.softwareItem:hover .iconWrapper {
+    color: #ff6655;
+    filter: drop-shadow(0 0 10px rgba(255, 85, 68, 0.4));
+}
+
+.softwareName {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-align: center;
+}
+
+/* Extra Skills (Soft Skills & Languages) */
+.extraSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 5rem auto 0;
+    align-items: start;
+}
+
+.softSkills h3,
+.languages h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+    text-align: center;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.softSkills,
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-accent);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+}
+
+.tags span:hover {
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+    background: rgba(221, 51, 34, 0.1);
+}
+
+.languageItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.languageItem span:first-child {
+    font-weight: 600;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.langLevel {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* Experience Section */
+.experienceSection {
+    padding: 4rem 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.experienceSection h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timelineItem {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    align-items: center;
+    /* Centrar verticalmente contenido */
+}
+
+.timelineItem:hover {
+    border-color: rgba(221, 51, 34, 0.3);
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    /* Aumentado más para que destaque */
+    font-weight: 700;
+    color: var(--color-secondary);
+    min-width: 100px;
+    text-align: center;
+}
+
+.expContent h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* Montserrat Bold */
+    color: var(--color-white);
+    margin-bottom: 0.25rem;
+}
+
+.expContent p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    /* Poppins Light */
+    color: var(--color-accent);
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 6rem 0;
+}
+
+.ctaContent {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+}
+
+.ctaContent h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.ctaContent p {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+}
+
+.ctaBtn {
+    display: inline-flex;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #ff5544 100%);
+    color: var(--color-white);
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 0 10px 40px rgba(221, 51, 34, 0.4);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .extraSkills {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .softwareGrid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+
+
+    .heroText {
+        max-width: 100%;
+    }
+
+    .imagePlaceholder {
+        width: 280px;
+        height: 320px;
+    }
+
+    .imagePlaceholder span {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-top: 80px;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .ctaContent {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .timelineItem {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .expContent {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding-top: 70px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .heroText h1 {
+        font-size: 2.5rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .imagePlaceholder {
+        width: 220px;
+        height: 260px;
+    }
+
+    .imagePlaceholder span {
+        font-size: 5rem;
+    }
+
+    .aboutSection {
+        padding: 3rem 0 2rem;
+    }
+
+    .longBio p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .skillsSection {
+        padding: 2rem 0 4rem;
+    }
+
+    .skillsSection h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .softwareGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .softwareItem {
+        padding: 1.5rem 1rem;
+    }
+
+    .iconWrapper {
+        font-size: 2.5rem;
+    }
+
+    .softwareName {
+        font-size: 0.8rem;
+    }
+
+    .extraSkills {
+        margin: 3rem auto 0;
+        gap: 3rem;
+    }
+
+    .softSkills h3,
+    .languages h3 {
+        font-size: 1.2rem;
+    }
+
+    .tags span {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .languageItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .langLevel {
+        width: auto;
+        text-align: left;
+    }
+
+    .experienceSection {
+        padding: 3rem 0;
+    }
+
+    .experienceSection h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .timelineItem {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .year {
+        font-size: 1.3rem;
+        min-width: auto;
+    }
+
+    .expContent {
+        text-align: center;
+    }
+
+    .expContent h3 {
+        font-size: 1.1rem;
+    }
+
+    .ctaSection {
+        padding: 4rem 0;
+    }
+
+    .ctaContent {
+        padding: 2rem 1.25rem;
+    }
+
+    .ctaContent h2 {
+        font-size: 1.8rem;
+    }
+
+    .ctaContent p {
+        font-size: 1rem;
+    }
+
+    .ctaBtn {
+        padding: 1rem 2rem;
+        font-size: 0.85rem;
+    }
+}

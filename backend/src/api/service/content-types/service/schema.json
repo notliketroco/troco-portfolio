@@ -1,0 +1,31 @@
+{
+    "kind": "collectionType",
+    "collectionName": "services",
+    "info": {
+        "singularName": "service",
+        "pluralName": "services",
+        "displayName": "Service",
+        "description": "Servicios que ofrece el diseñador"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "icon": {
+            "type": "string",
+            "default": "palette"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

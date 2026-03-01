@@ -1,0 +1,57 @@
+{
+    "kind": "singleType",
+    "collectionName": "site_configs",
+    "info": {
+        "singularName": "site-config",
+        "pluralName": "site-configs",
+        "displayName": "Site Config",
+        "description": "Configuración global del sitio"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "siteName": {
+            "type": "string",
+            "default": "Troco",
+            "required": true
+        },
+        "tagline": {
+            "type": "string",
+            "default": "Diseñador Gráfico"
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "favicon": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "socialLinks": {
+            "type": "json",
+            "default": {
+                "instagram": "",
+                "behance": "",
+                "dribbble": "",
+                "linkedin": ""
+            }
+        },
+        "contactEmail": {
+            "type": "email"
+        },
+        "footerText": {
+            "type": "string",
+            "default": "© 2026 Troco. Todos los derechos reservados."
+        }
+    }
+}
